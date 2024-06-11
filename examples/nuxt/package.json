@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@file-nest/api": "workspace:*",
+    "@trpc/client": "^11.0.0-rc.370",
+    "jsonwebtoken": "^9.0.2",
+    "nuxt": "^3.11.2",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2",
+    "@file-nest/upload-button": "workspace:*",
+    "preact": "^10.19.6",
+    "@file-nest/preact-vue-connect": "workspace:*",
+    "@file-nest/uploader": "workspace:*",
+    "@file-nest/dropzone": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@file-nest/api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@trpc/client": "^11.0.0-rc.370"
+  },
+  "peerDependencies": {
+    "@trpc/client": "^11.0.0-rc.370"
+  }
+}

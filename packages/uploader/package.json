@@ -1,0 +1,24 @@
+{
+  "name": "@file-nest/uploader",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@uppy/aws-s3": "^3.6.2",
+    "@uppy/core": "^3.11.3"
+  },
+  "peerDependencies": {
+    "@uppy/aws-s3": "^3.6.2",
+    "@uppy/core": "^3.11.3"
+  }
+}

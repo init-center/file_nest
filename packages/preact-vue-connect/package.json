@@ -1,0 +1,24 @@
+{
+  "name": "@file-nest/preact-vue-connect",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "preact": "^10.19.6",
+    "vue": "^3.4.27"
+  },
+  "peerDependencies": {
+    "preact": "^10.19.6",
+    "vue": "^3.4.27"
+  }
+}
