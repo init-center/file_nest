@@ -16,6 +16,7 @@ import { ScrollArea } from "../ui/ScrollArea";
 import type { FilesOrderByColumn } from "@/server/trpc/router/routes/files";
 import { CopyUrl, DeleteFile } from "./FileItemAction";
 import { toast } from "sonner";
+import copy from "copy-to-clipboard";
 
 interface FileListProps {
   uppy: Uppy;
@@ -227,7 +228,18 @@ export default function FileList({
                   {file.name}
                 </h3>
                 <div className="flex justify-end">
-                  <CopyUrl onClick={() => onMakeUrl(file.id)} />
+                  <CopyUrl
+                    onClick={() => {
+                      const isImage = file.type.startsWith("image/");
+                      if (!isImage) {
+                        copy(
+                          `${process.env.NEXT_PUBLIC_SITE_URL}/files/${file.id}`
+                        );
+                        return;
+                      }
+                      onMakeUrl(file.id);
+                    }}
+                  />
                   <DeleteFile
                     fileId={file.id}
                     handleDeleteSuccess={handleDeleteSuccess}
