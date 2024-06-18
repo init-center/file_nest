@@ -235,6 +235,7 @@ export default function FileList({
                         copy(
                           `${process.env.NEXT_PUBLIC_SITE_URL}/files/${file.id}`
                         );
+                        toast("URL copied to clipboard!");
                         return;
                       }
                       onMakeUrl(file.id);
